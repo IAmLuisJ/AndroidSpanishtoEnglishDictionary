@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String spanishWord = listViewSpanish.getItemAtPosition(position).toString();
                 String englishWord = "";
+                
                 for (int i = 0; i< spanishWords.size(); i++) {
                     if (spanishWords.get(i).equals(spanishWord)) {
                         englishWord = englishWords.get(i);
